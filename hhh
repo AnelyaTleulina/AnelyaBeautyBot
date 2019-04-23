@@ -1,0 +1,11 @@
+def message(update, context):
+  text=update.message.text
+  chat_id=update.message.chat_id
+
+  if text in ['cosmetics', 'perfume']:
+    a.Type = text
+    context.bot.send_message(chat_id=chat_id, text= 'Give me the name of the item please :)')
+  elif text.startswith('BIN'):
+    a.Item = text
+  else:
+    context.bot.send_message(chat_id=chat_id, text= 'Give me the name of the item please :)')
